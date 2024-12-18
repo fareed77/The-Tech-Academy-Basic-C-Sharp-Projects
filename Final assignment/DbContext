@@ -1,0 +1,11 @@
+using System;
+using System.Data.Entity;
+
+public class SchoolContext : DbContext
+{
+    public DbSet<Student> Students { get; set; }
+
+    public SchoolContext() : base("SchoolDB")
+    {
+    }
+}
